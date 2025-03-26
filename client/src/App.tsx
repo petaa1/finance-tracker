@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import DonutChart from "./components/DonutChart";
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -28,6 +30,11 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+
+      <div className="flex flex-col items-center">
+        <h2 className="text-xl mt-4">Spending Breakdown</h2>
+        <DonutChart />
+      </div>
     </>
   )
 }
