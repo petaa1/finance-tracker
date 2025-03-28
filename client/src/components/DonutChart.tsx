@@ -23,7 +23,8 @@ const renderCenteredText = (total: number) => {
     fontSize="20px"
     fontWeight="bold"
     fill="#FFFFFF">
-      {total}
+      <tspan x={"50%"} dy={"-10"}>${total}</tspan>
+      <tspan x={"50%"} dy={"20"} fontSize="12px" fill="#FFFFFF">Total Spending</tspan>
     </text>
 
   )
